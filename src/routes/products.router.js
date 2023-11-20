@@ -4,7 +4,7 @@ import ProductManager from '../productManager.js';
 const router = Router();
 const nuevoProductManager = new ProductManager("../products.json");
 
-router.get("/products", async (request, response) => {
+router.get("/", async (request, response) => {
     const { limit } = request.query;
     const limitNumber = Number(limit);
     const products = await nuevoProductManager.getProducts()
@@ -23,7 +23,7 @@ router.get("/products", async (request, response) => {
 });
 
 
-router.get("/products/:id", async (request, response) => {
+router.get("/:id", async (request, response) => {
     const { id } = request.params;
     const numberId = Number(id)
 
