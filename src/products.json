@@ -1,0 +1,112 @@
+[
+	{
+		"title": "Product 1",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin imagen.",
+		"code": "abc123",
+		"stock": 25,
+		"status": true,
+		"category": "category1",
+		"id": 1
+	},
+	{
+		"title": "Product 2",
+		"description": "Este es un producto de prueba 2",
+		"price": 290,
+		"thumbnail": "Sin imagen.",
+		"code": "lkc141",
+		"stock": 36,
+		"status": true,
+		"category": "category2",
+		"id": 2
+	},
+	{
+		"title": "Product 3",
+		"description": "Este es un producto de prueba 3",
+		"price": 450,
+		"thumbnail": "Sin imagen.",
+		"code": "bgd145",
+		"stock": 40,
+		"status": true,
+		"category": "category3",
+		"id": 3
+	},
+	{
+		"title": "Product 4",
+		"description": "Este es un producto de prueba 4",
+		"price": 290,
+		"thumbnail": "Sin imagen.",
+		"code": "jhg653",
+		"stock": 16,
+		"status": true,
+		"category": "category2",
+		"id": 4
+	},
+	{
+		"title": "Product 5",
+		"description": "Este es un producto de prueba 5",
+		"price": 290,
+		"thumbnail": "Sin imagen.",
+		"code": "ljh563",
+		"stock": 36,
+		"status": true,
+		"category": "category2",
+		"id": 5
+	},
+	{
+		"title": "Product 6",
+		"description": "Este es un producto de prueba 6",
+		"price": 253,
+		"thumbnail": "Sin imagen.",
+		"code": "vyc512",
+		"stock": 54,
+		"status": true,
+		"category": "category1",
+		"id": 6
+	},
+	{
+		"title": "Product 7",
+		"description": "Este es un producto de prueba 7",
+		"price": 650,
+		"thumbnail": "Sin imagen.",
+		"code": "jfs253",
+		"stock": 61,
+		"status": true,
+		"category": "category3",
+		"id": 7
+	},
+	{
+		"title": "Product 8",
+		"description": "Este es un producto de prueba 8",
+		"price": 420,
+		"thumbnail": "Sin imagen.",
+		"code": "pek665",
+		"stock": 27,
+		"status": true,
+		"category": "category1",
+		"id": 8
+	},
+	{
+		"title": "Product 9",
+		"description": "Este es un producto de prueba 9",
+		"price": 220,
+		"thumbnail": "Sin imagen.",
+		"code": "lkj221",
+		"stock": 36,
+		"status": true,
+		"category": "category3",
+		"id": 9
+	},
+	{
+		"title": "Product 10",
+		"description": "Este es un producto de prueba 10",
+		"price": 290,
+		"thumbnail": "Sin imagen.",
+		"code": "ghb245",
+		"stock": 42,
+		"status": true,
+		"category": "category1",
+		"id": 10
+	}
+]
