@@ -129,7 +129,7 @@ class Product {
 
 // Tests
 
-async function lanzarTests() {
+/*async function lanzarTests() {
     const productManager = new ProductManager();
 
     console.log("Agregando producto de prueba...");
@@ -256,6 +256,7 @@ async function lanzarTests() {
 
 }
 
-/*lanzarTests()*/
+lanzarTests()*/
 
-export default ProductManager;
+export default ProductManager ;
+export { Product } ;
