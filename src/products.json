@@ -1,24 +1,35 @@
 [
 	{
-		"title": "Product 51",
-		"description": "Este es un producto de prueba 51",
-		"price": 300,
+		"title": "Product 1",
+		"description": "Este es un producto de prueba 1",
+		"price": 200,
 		"thumbnail": "Sin imagen.",
-		"code": "kmn373",
-		"stock": 36,
+		"code": "plo573",
+		"stock": 31,
 		"status": true,
 		"category": "category1",
 		"id": 1
 	},
 	{
-		"title": "Product 61",
+		"title": "Product 51",
 		"description": "Este es un producto de prueba 61",
 		"price": 250,
 		"thumbnail": "Sin imagen.",
-		"code": "kjh573",
+		"code": "off573",
 		"stock": 38,
 		"status": true,
 		"category": "category2",
-		"id": 2
+		"id": 4
+	},
+	{
+		"title": "Product 51",
+		"description": "Este es un producto de prueba 61",
+		"price": 250,
+		"thumbnail": "Sin imagen.",
+		"code": "ppo573",
+		"stock": 38,
+		"status": true,
+		"category": "category2",
+		"id": 5
 	}
 ]

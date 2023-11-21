@@ -70,7 +70,12 @@ class ProductManager {
         if (!product.id) {
             product.id = this.products.length + 1;
         }
-
+        const existingProductId = this.products.find((existingProduct) => existingProduct.id === product.id);
+        
+        if (existingProductId) {
+            product.id = this.products.length + 2;
+        }
+        
         this.products.push(product);
 
         await this.saveFile();

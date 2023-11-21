@@ -56,7 +56,58 @@ router.post("/", async (request, response) => {
 })
 
 router.delete("/:id", async (request, response) => {
-    
+    const { id } = request.params;
+    const numberId = Number(id);
+
+    if (isNaN(numberId)) {
+        return response.json({
+            message: "Se necesita ingreso de un ID válido."
+        });
+    }
+
+    try {
+        await nuevoProductManager.deleteProduct(numberId);
+        response.json({
+            message: `Producto con ID ${numberId} eliminado.`,
+        });
+    } catch (error) {
+        if (error.code === 'ECONNRESET') {
+            console.error('Error de conexión:', error);
+            return response.status(500).json({
+                error: 'Error de conexión al intentar eliminar el producto.',
+            });
+        } else {
+            response.status(500).json({
+                error: error.message,
+            });
+        }
+    }
+});
+
+router.put("/:id", async (request, response) => {
+    const { id } = request.params;
+    const { title, description, price, thumbnail, code, stock, status, category } = request.body;
+    const updatedProduct = new Product (title, description, price, thumbnail, code, stock, status, category)
+
+    const numberId = Number(id);
+
+    try{
+        await nuevoProductManager.updateProduct(numberId, updatedProduct);
+        response.json({
+            message: `Producto con ID ${numberId} modificado.`,
+            title,
+            description,
+            price,
+            thumbnail,
+            code,
+            stock,
+            status,
+            category,
+            id: numberId,        })
+    } catch (error) {
+        error: error.message
+    }
+
 })
 
 export default router;
