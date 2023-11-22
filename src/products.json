@@ -11,25 +11,25 @@
 		"id": 1
 	},
 	{
-		"title": "Product 51",
-		"description": "Este es un producto de prueba 61",
+		"title": "Product 2",
+		"description": "Este es un producto de prueba 2",
 		"price": 250,
 		"thumbnail": "Sin imagen.",
 		"code": "off573",
 		"stock": 38,
 		"status": true,
 		"category": "category2",
-		"id": 4
+		"id": 2
 	},
 	{
-		"title": "Product 51",
-		"description": "Este es un producto de prueba 61",
+		"title": "Product 3",
+		"description": "Este es un producto de prueba 3",
 		"price": 250,
 		"thumbnail": "Sin imagen.",
 		"code": "ppo573",
-		"stock": 38,
+		"stock": 35,
 		"status": true,
 		"category": "category2",
-		"id": 5
+		"id": 3
 	}
 ]

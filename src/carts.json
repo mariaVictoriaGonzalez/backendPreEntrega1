@@ -1,21 +1,11 @@
 [
 	{
 		"cid": 1,
-		"products": [
-			{
-				"product": 5,
-				"cuantity": 2
-			}
-		]
+		"products": []
 	},
 	{
 		"cid": 2,
-		"products": [
-			{
-				"product": 5,
-				"cuantity": 6
-			}
-		]
+		"products": []
 	},
 	{
 		"cid": 3,
