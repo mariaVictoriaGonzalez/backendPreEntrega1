@@ -1,14 +1,15 @@
 import { Router, request, response } from "express";
-import ProductManager from '../productManager.js';
+import { Cart } from "../cartManager.js";
+import { CartManager } from "../cartManager.js";
 
 const router = Router();
-const nuevoProductManager = new ProductManager("../products.json");
+const nuevoCartManager = new CartManager();
 
-router.get("/", (request, response) => {
+router.get("/", async (request, response) => {
     try {
-        // Your existing route logic
+        await nuevoCartManager.addCart();
         response.json({
-            message: "You accessed the carts route."
+            message: "Carrito creado."
         });
     } catch (error) {
         console.error(error);
@@ -16,5 +17,25 @@ router.get("/", (request, response) => {
     }
 });
 
+router.get("/:cid", async (request, response) => {
+    const { cid } = request.params;
+    const numberCid = Number(cid)
+
+    const cart = await nuevoCartManager.getCartById(numberCid)
+
+    if (cart) {
+        return response.json(cart)
+    } else {
+        return response.send("ERROR: producto no encontrado.")
+    }
+
+});
+
+router.post("/:cid/product/:pid", async (request, response) => {
+    const { cid, pid } = request.params;
+    await nuevoCartManager.addProductToCart(Number(cid), Number(pid))
+    
+    response.json({message: `Productocon ID ${pid} agregado al carrito nro ${cid}`})
+})
 
 export default router;
